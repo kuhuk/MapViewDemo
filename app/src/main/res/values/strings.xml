@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MapView Demo</string>
+    <string name="google_maps_key">AIzaSyBmNONdM3iJYwIRpj1KRBghbS3XV4XpUzY</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="move_to_maps_activity">Move to Maps Activity</string>
+    <string name="open_maps_fragment">Open Maps on Fragment</string>
+    <string name="search_results">Search Results</string>
+    <string name="bangalore">Bangalore</string>
+    <string name="hsr_layout">HSR Layout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_tag1">Sector 2</string>
+    <string name="location_tag2">HSR Layout</string>
+    <string name="includes_food">Includes Food</string>
+    <string name="price_per_bed">8,500/</string>
+    <string name="bed">Bed</string>
+    <string name="price_deposit">Deposit: 12000</string>
+    <string name="image_of_the_place_mentioned">Image of the place mentioned.</string>
+    <string name="from">From</string>
+    <string name="back_to_search">Back to search</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="screen_4">Screen 4</string>
+    <string name="that_wonderful_house">That Wonderful House</string>
+    <string name="availability">Availability</string>
+    <string name="twin_rooms">Twin Rooms</string>
+    <string name="available">Available</string>
+    <string name="_8500_bed">8,500/Bed</string>
+    <string name="status">Status</string>
+    <string name="single_rooms">Single Rooms</string>
+    <string name="_16_500">16,500</string>
+    <string name="only_2_left">Only 2 left</string>
+    <string name="shared_rooms">Shared Rooms</string>
+    <string name="next_available_dec_25">Next Available Dec 25</string>
+    <string name="_6_500_bed">6,500/Bed</string>
+    <string name="amenities">Amenities</string>
+    <string name="sofa">Sofa</string>
+    <string name="wifi">Wifi</string>
+    <string name="television">Television</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="maps">Maps</string>
+    <string name="rent_details">Rent Details</string>
+    <string name="other_terms">Other Terms</string>
+    <string name="visit">Visit</string>
+    <string name="book">Book</string>
+</resources>
