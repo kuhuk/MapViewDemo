@@ -1,5 +1,4 @@
-package com.sharma.kuhuk.mapviewdemo;
-
+package com.sharma.kuhuk.mapviewdemo.myVisits;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,61 +12,61 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.sharma.kuhuk.mapviewdemo.R;
+import com.sharma.kuhuk.mapviewdemo.screen3.FragmentScreen3;
+import com.sharma.kuhuk.mapviewdemo.screen3.RecyclerViewAdapterS3;
 
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentUserDashboard extends Fragment {
+public class FragmentMyVisits extends Fragment {
 
     // For RecyclerView
     @SuppressLint("StaticFieldLeak")
     private static RecyclerView recyclerView;
-    private static ArrayList<String> stringArrayList1;
+    private static ArrayList<String> stringArrayList2;
     private RecyclerView.LayoutManager layoutManager;
     private static RecyclerView.Adapter adapter;
-    static View.OnClickListener myOnClickListener;
+    static View.OnClickListener mvOnClickListener;
 
-
-    public FragmentUserDashboard() {
+    public FragmentMyVisits() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootViewUD = inflater.inflate(R.layout.fragment_user_dashboard, container, false);
+        View rootViewMV = inflater.inflate(R.layout.fragment_fragment_my_visits, container, false);
 
         //RecyclerView code starts here
         // Initialize ArrayList and add elements to it
-        stringArrayList1 = new ArrayList<>();
-        for (int i = 0; i <= 4; i++)
-            stringArrayList1.add("Element "+i);
+        stringArrayList2 = new ArrayList<>();
+        for (int i = 0; i <= 14; i++)
+            stringArrayList2.add("Element " + i);
 
-        recyclerView = rootViewUD.findViewById(R.id.rv_user_dashboard);
+        recyclerView = rootViewMV.findViewById(R.id.rv_my_visits);
         recyclerView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        adapter = new RecyclerViewAdapterUD(stringArrayList1);
+        adapter = new RecyclerViewAdapterMV(stringArrayList2);
         recyclerView.setAdapter(adapter);
 
-        myOnClickListener = new FragmentUserDashboard.UDOnClickListener(getActivity());
+        mvOnClickListener = new FragmentMyVisits.MVOnClickListener(getActivity());
         //RecyclerView code ends here
 
-        return rootViewUD;
+        return rootViewMV;
     }
-
     //onClick events (RecyclerView code)
-    private static class UDOnClickListener implements View.OnClickListener {
+    private static class MVOnClickListener implements View.OnClickListener {
         private final Context context;
 
-        private UDOnClickListener(Context context) {
+        private MVOnClickListener(Context context) {
             this.context = context;
         }
 
@@ -77,5 +76,4 @@ public class FragmentUserDashboard extends Fragment {
             Toast.makeText(context, "Element "+position, Toast.LENGTH_LONG).show();
         }
     }
-
 }

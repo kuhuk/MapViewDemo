@@ -1,9 +1,11 @@
-package com.sharma.kuhuk.mapviewdemo;
+package com.sharma.kuhuk.mapviewdemo.screen3;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.sharma.kuhuk.mapviewdemo.R;
 
 public class Screen3 extends AppCompatActivity {
 

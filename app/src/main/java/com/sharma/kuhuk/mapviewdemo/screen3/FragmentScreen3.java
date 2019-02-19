@@ -1,4 +1,4 @@
-package com.sharma.kuhuk.mapviewdemo;
+package com.sharma.kuhuk.mapviewdemo.screen3;
 
 
 import android.annotation.SuppressLint;
@@ -27,6 +27,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.sharma.kuhuk.mapviewdemo.R;
 
 import java.util.ArrayList;
 

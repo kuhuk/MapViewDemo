@@ -1,4 +1,4 @@
-package com.sharma.kuhuk.mapviewdemo;
+package com.sharma.kuhuk.mapviewdemo.screen4;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -20,6 +20,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.sharma.kuhuk.mapviewdemo.R;
 
 public class Screen4 extends AppCompatActivity implements OnMapReadyCallback {
 

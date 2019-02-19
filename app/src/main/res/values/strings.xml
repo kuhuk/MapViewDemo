@@ -52,4 +52,13 @@
     <string name="amount_due_nov_18">Amount Due - Nov 18</string>
     <string name="upcoming_events">Upcoming Events</string>
     <string name="register">Register</string>
+    <string name="my_visits">My Visits</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="dec_13_2018">Dec 13, 2018</string>
+    <string name="where">Where</string>
+    <string name="_10_30_am">10:30 AM</string>
+    <string name="sector_2">Sector 2</string>
+    <string name="change">Change</string>
+    <string name="get_direction">Get Direction</string>
 </resources>

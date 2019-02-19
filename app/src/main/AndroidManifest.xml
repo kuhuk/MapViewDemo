@@ -23,10 +23,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerViewAdapterUD"></activity>
-        <activity android:name=".UserDashboard" />
-        <activity android:name=".Screen4" />
-        <activity android:name=".Screen3" />
+        <activity android:name=".myVisits.RecyclerViewAdapterMV"></activity>
+        <activity android:name=".myVisits.MyVisits" />
+        <activity android:name=".userDashboard.RecyclerViewAdapterUD" />
+        <activity android:name=".userDashboard.UserDashboard" />
+        <activity android:name=".screen4.Screen4" />
+        <activity android:name=".screen3.Screen3" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

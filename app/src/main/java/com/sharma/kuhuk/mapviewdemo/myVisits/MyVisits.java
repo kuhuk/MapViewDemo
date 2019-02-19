@@ -1,16 +1,19 @@
-package com.sharma.kuhuk.mapviewdemo;
+package com.sharma.kuhuk.mapviewdemo.myVisits;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class UserDashboard extends AppCompatActivity {
+import com.sharma.kuhuk.mapviewdemo.R;
+import com.sharma.kuhuk.mapviewdemo.screen3.FragmentScreen3;
+
+public class MyVisits extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_dashboard);
+        setContentView(R.layout.activity_my_visits);
 
         // Hide the status bar
         View decorView = getWindow().getDecorView();
@@ -21,7 +24,7 @@ public class UserDashboard extends AppCompatActivity {
         assert actionbar != null;
         actionbar.hide();
 
-        //attach fragment on this activity
-        getSupportFragmentManager().beginTransaction().replace(R.id.container_user_dashboard, new FragmentUserDashboard()).commit();
+        //attach fragment (MapFragment) on this activity
+        getSupportFragmentManager().beginTransaction().replace(R.id.container_my_visits, new FragmentMyVisits()).commit();
     }
 }
