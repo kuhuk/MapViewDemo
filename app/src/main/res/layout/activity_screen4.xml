@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".MainScreen">
+    tools:context=".Screen3">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -635,6 +635,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/visit"
+                    android:background="@drawable/my_button_bg"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#000"
@@ -646,6 +647,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/book"
+                    android:background="@drawable/my_button_bg"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#000"

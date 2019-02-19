@@ -45,4 +45,11 @@
     <string name="other_terms">Other Terms</string>
     <string name="visit">Visit</string>
     <string name="book">Book</string>
+    <string name="user_dashboard">User Dashboard</string>
+    <string name="liv_24_7">24/7 Liv</string>
+    <string name="rs_8622">Rs. 8622</string>
+    <string name="pay_now">Pay now</string>
+    <string name="amount_due_nov_18">Amount Due - Nov 18</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="register">Register</string>
 </resources>

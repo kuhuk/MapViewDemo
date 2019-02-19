@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnMapDemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainScreen.class));
+                startActivity(new Intent(MainActivity.this, Screen3.class));
             }
         });
 
@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Screen4.class));
+            }
+        });
+
+        Button btnUserDashboard = findViewById(R.id.btnUserDashboard);
+        btnUserDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, UserDashboard.class));
             }
         });
     }
