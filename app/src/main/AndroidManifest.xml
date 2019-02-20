@@ -23,7 +23,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".myVisits.RecyclerViewAdapterMV"></activity>
+        <activity android:name=".SignIn"></activity>
+        <activity android:name=".myVisits.RecyclerViewAdapterMV" />
         <activity android:name=".myVisits.MyVisits" />
         <activity android:name=".userDashboard.RecyclerViewAdapterUD" />
         <activity android:name=".userDashboard.UserDashboard" />

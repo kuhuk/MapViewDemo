@@ -61,4 +61,5 @@
     <string name="sector_2">Sector 2</string>
     <string name="change">Change</string>
     <string name="get_direction">Get Direction</string>
+    <string name="sign_in">Sign In</string>
 </resources>
