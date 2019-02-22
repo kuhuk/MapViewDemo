@@ -66,4 +66,6 @@
     <string name="sector_2_hsr_layout">Sector 2, HSR Layout</string>
     <string name="faq_question_sample">What are the parameters that determine the rent of my property?</string>
     <string name="faq">FAQ</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
 </resources>
