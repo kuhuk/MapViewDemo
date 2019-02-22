@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MapView Demo</string>
+    <string name="app_name">CoLiving Demo</string>
     <string name="google_maps_key">AIzaSyBmNONdM3iJYwIRpj1KRBghbS3XV4XpUzY</string>
     <string name="title_activity_maps">Map</string>
 
@@ -62,4 +62,8 @@
     <string name="change">Change</string>
     <string name="get_direction">Get Direction</string>
     <string name="sign_in">Sign In</string>
+    <string name="check_icon">Check Icon</string>
+    <string name="sector_2_hsr_layout">Sector 2, HSR Layout</string>
+    <string name="faq_question_sample">What are the parameters that determine the rent of my property?</string>
+    <string name="faq">FAQ</string>
 </resources>

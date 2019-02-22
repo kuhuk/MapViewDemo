@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/my_visits"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintEnd_toEndOf="@+id/btnUserDashboard"
@@ -63,11 +63,22 @@
         android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/btnFAQ"
         app:layout_constraintEnd_toEndOf="@+id/btnMyVisits"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btnMyVisits"
         app:layout_constraintTop_toBottomOf="@+id/btnMyVisits" />
+
+    <Button
+        android:id="@+id/btnFAQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/faq"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
 
 </android.support.constraint.ConstraintLayout>

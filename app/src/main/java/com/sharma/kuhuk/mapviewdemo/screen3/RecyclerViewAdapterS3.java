@@ -51,10 +51,8 @@ static class MyViewHolder extends RecyclerView.ViewHolder {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
 
-        myViewHolder.tvLocationTag1.setText(arrayList.get(i));
-        myViewHolder.tvLocationTag2.setText(arrayList.get(i));
-//        myViewHolder.textView3.setText(arrayList.get(i));
-//        myViewHolder.mButton.setText(arrayList.get(i));
+//        myViewHolder.tvLocationTag1.setText(arrayList.get(i));
+//        myViewHolder.tvLocationTag2.setText(arrayList.get(i));
     }
 
     @Override

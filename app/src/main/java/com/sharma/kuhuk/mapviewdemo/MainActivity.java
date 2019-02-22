@@ -8,6 +8,7 @@ import android.widget.Button;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.model.LatLng;
+import com.sharma.kuhuk.mapviewdemo.faq.FAQs;
 import com.sharma.kuhuk.mapviewdemo.myVisits.MyVisits;
 import com.sharma.kuhuk.mapviewdemo.screen3.Screen3;
 import com.sharma.kuhuk.mapviewdemo.screen4.Screen4;
@@ -62,6 +63,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SignIn.class));
+            }
+        });
+
+        Button btnFAQ = findViewById(R.id.btnFAQ);
+        btnFAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FAQs.class));
             }
         });
     }

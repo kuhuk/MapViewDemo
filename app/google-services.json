@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "1032750234542",
+    "firebase_url": "https://know-disney.firebaseio.com",
+    "project_id": "know-disney",
+    "storage_bucket": "know-disney.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032750234542:android:dca16ae7c6d3603c",
+        "android_client_info": {
+          "package_name": "com.sharma.kuhuk.knowdisney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032750234542-sgsgda8ub6i1p544i7dma332d33p571v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sharma.kuhuk.knowdisney",
+            "certificate_hash": "dcb69d35f0649ca2a7ba3e555a2117ec1233a808"
+          }
+        },
+        {
+          "client_id": "1032750234542-i9l76i3lpcvpkeqq7drdhfidjakrsg9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtUs5I43zslWmDXlvydc-hqNLYpXvraSI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032750234542-i9l76i3lpcvpkeqq7drdhfidjakrsg9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032750234542:android:130c9d122d3ff580",
+        "android_client_info": {
+          "package_name": "com.sharma.kuhuk.mapviewdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032750234542-i9l76i3lpcvpkeqq7drdhfidjakrsg9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtUs5I43zslWmDXlvydc-hqNLYpXvraSI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

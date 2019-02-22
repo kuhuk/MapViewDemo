@@ -23,7 +23,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignIn"></activity>
+        <activity android:name=".RealtimeDatabase.FirebaseDatabase"></activity>
+        <activity android:name=".faq.FAQDetails" />
+        <activity android:name=".faq.AdapterFAQ" />
+        <activity android:name=".faq.FAQs" />
+        <activity android:name=".SignIn" />
         <activity android:name=".myVisits.RecyclerViewAdapterMV" />
         <activity android:name=".myVisits.MyVisits" />
         <activity android:name=".userDashboard.RecyclerViewAdapterUD" />
