@@ -68,4 +68,7 @@
     <string name="faq">FAQ</string>
 
     <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="tvPhoneNumber">+91 99 898 88301</string>
 </resources>
