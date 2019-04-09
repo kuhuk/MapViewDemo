@@ -63,7 +63,7 @@
         android:id="@+id/btnSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in"
+        android:text="@string/google_sign_in"
         app:layout_constraintBottom_toTopOf="@+id/btnFAQ"
         app:layout_constraintEnd_toEndOf="@+id/btnMyVisits"
         app:layout_constraintHorizontal_bias="1.0"
@@ -80,5 +80,16 @@
         app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
         app:layout_constraintStart_toStartOf="@+id/btnSignIn"
         app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <Button
+        android:id="@+id/btnFBSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/facebook_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/btnFAQ"
+        app:layout_constraintStart_toStartOf="@+id/btnFAQ"
+        app:layout_constraintTop_toBottomOf="@+id/btnFAQ" />
 
 </android.support.constraint.ConstraintLayout>

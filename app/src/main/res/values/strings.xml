@@ -61,7 +61,7 @@
     <string name="sector_2">Sector 2</string>
     <string name="change">Change</string>
     <string name="get_direction">Get Direction</string>
-    <string name="sign_in">Sign In</string>
+    <string name="google_sign_in">Google Sign In</string>
     <string name="check_icon">Check Icon</string>
     <string name="sector_2_hsr_layout">Sector 2, HSR Layout</string>
     <string name="faq_question_sample">What are the parameters that determine the rent of my property?</string>
@@ -71,4 +71,8 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="tvPhoneNumber">+91 99 898 88301</string>
+    <string name="facebook_sign_in">Facebook Sign In</string>
+    <string name="facebook_app_id">370312136987189</string>
+    <string name="fb_login_protocol_scheme">fb370312136987189</string>
+
 </resources>

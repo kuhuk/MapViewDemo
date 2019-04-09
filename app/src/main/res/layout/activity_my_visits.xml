@@ -48,49 +48,6 @@
     </android.support.constraint.ConstraintLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="70dp">
-
-        <LinearLayout
-            android:background="#1976D2"
-            android:layout_weight="0.5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp">
-
-            <Button
-                android:id="@+id/btnUpcoming"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/upcoming"
-                android:textAllCaps="false"
-                android:textColor="#FFF"
-                android:textSize="18sp"
-                android:background="@drawable/white_border_button"/>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnPast"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="@string/past"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:layout_marginStart="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/my_button_bg"/>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/container_my_visits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
