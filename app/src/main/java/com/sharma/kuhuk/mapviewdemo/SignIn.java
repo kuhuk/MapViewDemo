@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,7 +26,6 @@ public class SignIn extends AppCompatActivity {
     private static final String TAG = "SignIn Tag";
     GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN = 1;
-
     String personName;
     Uri personPhoto;
 
@@ -43,10 +43,7 @@ public class SignIn extends AppCompatActivity {
         assert actionbar != null;
         actionbar.hide();
 
-        // Set the dimensions of the sign-in button.
-        SignInButton signInButton = findViewById(R.id.sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
-
+        // Handle OnClick events on SignIn button
         findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,9 +53,7 @@ public class SignIn extends AppCompatActivity {
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
 
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
@@ -76,6 +71,7 @@ public class SignIn extends AppCompatActivity {
         // the GoogleSignInAccount will be non-null.
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         if (account != null) {
+            // User is logged in
             personName = account.getDisplayName();
             String personGivenName = account.getGivenName();
             String personFamilyName = account.getFamilyName();
@@ -91,14 +87,13 @@ public class SignIn extends AppCompatActivity {
     private void updateUI(GoogleSignInAccount account) {
 
         // Hide the Google SignIn button
-        SignInButton signInButton = findViewById(R.id.sign_in_button);
+        ImageView signInButton = findViewById(R.id.sign_in_button);
         signInButton.setVisibility(View.GONE);
 
         TextView tvGreeting = findViewById(R.id.tvGreeting);
         tvGreeting.setText("Hi, "+personName+"!");
 
         ImageView ivUserDP = findViewById(R.id.ivUserDP);
-
         Picasso.with(this).load(personPhoto).into(ivUserDP);
     }
 
@@ -115,17 +110,16 @@ public class SignIn extends AppCompatActivity {
         }
     }
 
-        private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
-            try {
-                GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-
-                // Signed in successfully, show authenticated UI.
-                updateUI(account);
-            } catch (ApiException e) {
-                // The ApiException status code indicates the detailed failure reason.
-                // Please refer to the GoogleSignInStatusCodes class reference for more information.
-                Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
-                updateUI(null);
-            }
+    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+        try {
+            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+            // Signed in successfully, show authenticated UI.
+            updateUI(account);
+        } catch (ApiException e) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
+            updateUI(null);
         }
+    }
 }

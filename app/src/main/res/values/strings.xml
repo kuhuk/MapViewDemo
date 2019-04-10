@@ -74,5 +74,6 @@
     <string name="facebook_sign_in">Facebook Sign In</string>
     <string name="facebook_app_id">370312136987189</string>
     <string name="fb_login_protocol_scheme">fb370312136987189</string>
+    <string name="facebook">Facebook</string>
 
 </resources>
